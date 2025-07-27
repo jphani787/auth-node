@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 connectDb();
 
 app.use(express.json());
-
+// auth
 app.use("/api/auth", authRoutes);
 app.use("/api/books", bookRouter);
 app.use("/api/home", homeRouter);
