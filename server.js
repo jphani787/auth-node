@@ -14,11 +14,11 @@ connectDb();
 
 app.use(express.json());
 
-app.use("/api/v1/auth", authRoutes);
-app.use("/api/v1/books", bookRouter);
-app.use("/api/v1/home", homeRouter);
-app.use("/api/v1/admin", adminRouter);
-app.use("/api/v1/image", imageRouter);
+app.use("/api/auth", authRoutes);
+app.use("/api/books", bookRouter);
+app.use("/api/home", homeRouter);
+app.use("/api/admin", adminRouter);
+app.use("/api/image", imageRouter);
 
 
 app.listen(PORT, ()=>{
